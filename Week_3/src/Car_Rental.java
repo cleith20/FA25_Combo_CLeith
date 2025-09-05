@@ -33,7 +33,7 @@ public class Car_Rental {
 		
 		total = days * dayPrice + miles * milePrice;
 		
-		System.out.printf("Your total cost for rental is $%.2f", total);
+		System.out.printf("Your total cost for rental is $%.2f.", total);
 
 	}
 
