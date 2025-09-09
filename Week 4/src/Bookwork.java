@@ -4,7 +4,7 @@ public class Bookwork {
 	public static void main(String[] args) {
 		System.out.println("Hello");
 		newLine();
-		System.out.println("Cruel");
+		System.out.println("Beautiful");
 		threeLines();
 		System.out.println("World!");
 		
@@ -20,7 +20,7 @@ public class Bookwork {
 		double angle = 1.5;
 		double height = Math.sin(angle);
 		
-		System.out.printf("%.10f" , root);
+		System.out.printf("%.2f" , root);
 		newLine();
 		System.out.printf("%.2f" , height);
 		newLine();
@@ -61,7 +61,7 @@ public class Bookwork {
 		System.out.println();
 		System.out.println();
 	}
-	public static void newLine()
+	private static void newLine()
 	{
 		System.out.println();
 	}
