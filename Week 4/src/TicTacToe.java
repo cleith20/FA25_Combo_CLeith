@@ -6,6 +6,7 @@ public class TicTacToe {
 	public static void main(String[] args) {
 		String[] board = new String[9]; // need two loops for the rows and columns
 		int player = 1;
+<<<<<<< HEAD
 		int winner = 0;
 		int moves = 0;
 		fillBoard(board);
@@ -62,15 +63,29 @@ public class TicTacToe {
 		}
 		return 0;
 
+=======
+		fillBoard(board);
+		drawBoard(board);
+		makeMove(board, player);
+		drawBoard(board);
+		player = player %2 + 1;
+>>>>>>> 00ee0848f30c85b163146e88c391351882be59e1
 	}
 
 	private static void makeMove(String[] board, int player) {
 		String marker = "X";
 		if (player == 2)
 			marker = "O";
+<<<<<<< HEAD
 		System.out.printf("Player %d where would you like to go?", player);
 		int move = input.nextInt();
 		while (Character.isDigit(board[move].charAt(0))) {
+=======
+		System.out.println("Where would you like to go?");
+		int move = input.nextInt();
+		while (Character.isDigit(board[move].charAt(0)))
+		{
+>>>>>>> 00ee0848f30c85b163146e88c391351882be59e1
 			board[move] = marker;
 		}
 
