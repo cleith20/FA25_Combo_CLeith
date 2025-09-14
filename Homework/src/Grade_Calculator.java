@@ -1,3 +1,11 @@
+//Write a program to calculate the letter grade for 
+//this class given the numeric grade. Prompt the user to enter their numeric grade.
+//Read in the value using a Scanner.Use if and else if statements to 
+//check each condition for the user’s grade.For each one, output the letter grade 
+//corresponding to the numeric grade. If the grade entered is less than 0, 
+//print an error message.
+
+
 import java.util.Scanner;
 
 public class Grade_Calculator {

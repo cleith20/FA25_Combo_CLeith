@@ -28,6 +28,7 @@ public class Bookwork {
 		newLine();
 		System.out.printf("%.2f" , Math.cos(angle + Math.PI / 2));
 		newLine();
+		
 		String name = "Cam";
 		String starName = starFiller(name);
 		
