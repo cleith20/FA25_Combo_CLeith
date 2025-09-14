@@ -24,9 +24,7 @@ public class weather_stations {
 		double cityAvg = 0;
 
 		for (int count = 1; count <= 200;) {
-			System.out.println("What is the precipication of weather station " + count + "?");
 			double precip = rand.nextDouble(20);
-			System.out.println(precip);
 			count++;
 			if (count < 3) {
 				proTotal += precip;
@@ -37,7 +35,7 @@ public class weather_stations {
 			}
 		}
 		cityAvg = total / goodCount;
-		System.out.println("The averages for the city are " + cityAvg + ".");
+		System.out.println("The average precipitation for the 200 cities is " + cityAvg + ".");
 
 	}
 
