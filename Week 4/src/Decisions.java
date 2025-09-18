@@ -109,7 +109,7 @@ static Scanner input = new Scanner(System.in);
 			boolean flag;
 			flag = true;
 			
-			System.out.println(isSingleDigit(10));
+			System.out.println(isSingleDigit(9));
 			int userNum = getNum();
 			while(!isSingleDigit(userNum))
 			{
