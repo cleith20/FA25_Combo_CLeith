@@ -14,7 +14,7 @@ public class ArrayPlay {
 		
 		System.out.printf("found %s at index %d %n", words[index], index);
 
-		words[index] ="bigger";
+		words[index] ="Bigger";
 		
 		values = new double[10];
 		for (int i = 0; i < values.length; i++) { // fills in the array
