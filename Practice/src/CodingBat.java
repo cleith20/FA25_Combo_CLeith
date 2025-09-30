@@ -12,7 +12,7 @@ public class CodingBat {
 		String word = "word";
 		System.out.println(makeOutWord(out, word));
 		
-		String str = "HelloThere";
+		String str = "jjjk";
 		System.out.println(firstTwo(str));
 		
 		System.out.println(firstHalf(str));
@@ -27,7 +27,25 @@ public class CodingBat {
 		System.out.println(twoChar(word2, index));
 		
 		
+		String e = "java";
+		String f = "hello";
+		System.out.println(minCat(e, f));
+		
+		System.out.println(frontAgain(str));
+		
 	}
+	
+	private static boolean frontAgain(String str) {
+		  if(str.length()<= 1)return false;
+		  if(str.substring(0,1).equals(str.substring(str.length()-2, str.length()-1)))return true;
+		  return false;
+	}
+	
+	private static String minCat(String e, String f) {
+		 if(e.length() >= f.length()) return e.substring(e.length()-f.length())+f;
+		 if(f.length() >= e.length()) return e+ f.substring(f.length()-e.length());
+		 return e+f;
+		}
 
 	private static String twoChar(String word2, int index) {
 		 if(word2.length() <= index || word2.length() <= index+1 || index <=0)
