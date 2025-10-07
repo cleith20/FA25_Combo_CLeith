@@ -33,7 +33,54 @@ public class CodingBat {
 		
 		System.out.println(frontAgain(str));
 		
+		String str3 = "catdogdog";
+		System.out.println(catDog(str3));
+		
+		String g = "hiaBcx";
+		String h = "bc";
+		System.out.println(endOther(g,h));
+		
+		
+		
+		
 	}
+	
+	private static boolean endOther(String g, String h) {
+		String a2 =g.toLowerCase();
+		  String b2 = h.toLowerCase();
+		  String ab = "";
+		  if(g.length()>h.length())ab= g;
+		  else ab = h;
+		  for(int i = 0; i< ab.length()-1; i++)
+		  {
+		    if(a2.substring(i).equals(b2))
+		    {
+		      return true;
+		    }
+		    if(b2.substring(i).equals(a2))
+		    {
+		      return true;
+		    }
+		  }
+		  return false;
+		}
+	private static boolean catDog(String str) {
+		  int cat = 0;
+		  int dog = 0;
+		  for(int i = 0; i < str.length()-2; i++)
+		{
+		  if(str.substring(i, i+3).equals("cat"))
+		  {
+		    cat++;
+		  }
+		  if(str.substring(i, i+3).equals("dog"))
+		  {
+		    dog++;
+		  }
+		}
+		if(cat==dog)return true;
+		return false;
+		}
 	
 	private static boolean frontAgain(String str) {
 		  if(str.length()<= 1)return false;
