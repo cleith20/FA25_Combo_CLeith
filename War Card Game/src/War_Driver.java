@@ -2,15 +2,13 @@
 public class War_Driver {
 
 	public static void main(String[] args) {
-		Card[] cards = new Card[52];
-		fillCards(cards);
-		printCards(cards);
-		Card target = new Card(12, 2);
-		int cardNum = search(cards, target);
-
-		int cardNum2 = binSearch(cards, target);
-		System.out.println(target);
-		System.out.println(cardNum);
+		Deck deck = new Deck();
+		deck.shuffle();
+		deck.printCards();
+		deck.bubbleSort();
+		System.out.println();
+		System.out.println();
+		deck.printCards();
 
 	}
 
@@ -42,26 +40,6 @@ public class War_Driver {
 
 		}
 		return -1;
-	}
-
-	private static void printCards(Card[] cards) {
-		for (Card card : cards) {
-			System.out.print(card + ", ");
-			if (card.getRank() == 13)
-				System.out.println();
-		}
-
-	}
-
-	private static void fillCards(Card[] cards) {
-		int index = 0;
-		for (int suit = 0; suit <= 3; suit++) {
-			for (int rank = 1; rank <= 13; rank++) {
-				cards[index] = new Card(rank, suit);
-				index++;
-			}
-		}
-
 	}
 
 }
