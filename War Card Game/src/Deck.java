@@ -17,14 +17,35 @@ public class Deck {
 			}
 		}
 	}
-
-	public void bubbleSort()
+	
+	public void selectionSort()
 	{
-		for (int i = 0; i < cards.length; i++) {
+		for (int i = 0; i < cards.length-1; i++) {
+			int bigindex = 0;
 			for (int j = 1; j < cards.length-i; j++) {
-				if(cards[j-1].compareTo(cards[j])>0)
-				{
-					swap(j-1,j);
+				if (cards[j].compareTo(cards[bigindex])>0) {
+					bigindex = j;
+				}
+				swap(bigindex,cards.length-i-1);
+			}
+			
+		}
+	}
+
+	public void insertionSort() {
+		for (int i = 1; i < cards.length; i++) {
+			for (int j = i; (j > 0) && cards[j].compareTo(cards[j - 1]) < 0; j--) {
+				swap(j,j-1);
+			}
+
+		}
+	}
+
+	public void bubbleSort() {
+		for (int i = 0; i < cards.length; i++) {
+			for (int j = 1; j < cards.length - i; j++) {
+				if (cards[j - 1].compareTo(cards[j]) > 0) {
+					swap(j - 1, j);
 				}
 			}
 		}
@@ -55,7 +76,8 @@ public class Deck {
 	public void printCards() {
 		int n = 0;
 		for (Card card : cards) {
-			if (n % 13 == 0 && n != 0)System.out.println();
+			if (n % 13 == 0 && n != 0)
+				System.out.println();
 			System.out.print(card + ", ");
 			n++;
 		}

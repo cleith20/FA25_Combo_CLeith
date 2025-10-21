@@ -5,7 +5,9 @@ public class War_Driver {
 		Deck deck = new Deck();
 		deck.shuffle();
 		deck.printCards();
-		deck.bubbleSort();
+//		deck.bubbleSort();
+//		deck.insertionSort();
+		deck.selectionSort();
 		System.out.println();
 		System.out.println();
 		deck.printCards();
