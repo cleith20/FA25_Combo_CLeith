@@ -18,6 +18,8 @@ public class Deck {
 		}
 	}
 	
+	
+	
 	public void selectionSort()
 	{
 		for (int i = 0; i < cards.length-1; i++) {
@@ -49,6 +51,14 @@ public class Deck {
 				}
 			}
 		}
+	}
+	
+	public void subdeck(int low, int high) {
+	    Deck sub = new Deck(high - low + 1);
+	    for (int i = 0; i < sub.cards.length; i++) {
+	        sub.cards[i] = this.cards[low + i];
+	    }
+	    return;
 	}
 
 	public Card[] getCards() {
