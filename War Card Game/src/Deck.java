@@ -17,27 +17,32 @@ public class Deck {
 			}
 		}
 	}
-	
-	
-	
-	public void selectionSort()
-	{
-		for (int i = 0; i < cards.length-1; i++) {
+
+	public Deck subDeck(int low, int high) {
+		Deck sub = new Deck(high - low + 1);
+		for(int i = 0; i < sub.cards.length; i++) {
+			sub.cards[i] = this.cards[low+i];
+		}
+		return sub;
+	}
+
+	public void selectionSort() {
+		for (int i = 0; i < cards.length - 1; i++) {
 			int bigindex = 0;
-			for (int j = 1; j < cards.length-i; j++) {
-				if (cards[j].compareTo(cards[bigindex])>0) {
+			for (int j = 1; j < cards.length - i; j++) {
+				if (cards[j].compareTo(cards[bigindex]) > 0) {
 					bigindex = j;
 				}
-				swap(bigindex,cards.length-i-1);
+				swap(bigindex, cards.length - i - 1);
 			}
-			
+
 		}
 	}
 
 	public void insertionSort() {
 		for (int i = 1; i < cards.length; i++) {
 			for (int j = i; (j > 0) && cards[j].compareTo(cards[j - 1]) < 0; j--) {
-				swap(j,j-1);
+				swap(j, j - 1);
 			}
 
 		}
@@ -52,13 +57,13 @@ public class Deck {
 			}
 		}
 	}
-	
+
 	public void subdeck(int low, int high) {
-	    Deck sub = new Deck(high - low + 1);
-	    for (int i = 0; i < sub.cards.length; i++) {
-	        sub.cards[i] = this.cards[low + i];
-	    }
-	    return;
+		Deck sub = new Deck(high - low + 1);
+		for (int i = 0; i < sub.cards.length; i++) {
+			sub.cards[i] = this.cards[low + i];
+		}
+		return;
 	}
 
 	public Card[] getCards() {
