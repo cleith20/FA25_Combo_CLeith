@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+C:\Users\S03110369\FA25_Combo_CLeith\FA25_Combo_CLeith\.metadata\.plugins\org.eclipse.jdt.core
+4090077106.index
+3305795368.index
+2446798781.index
+4219279280.index
+1865797976.index

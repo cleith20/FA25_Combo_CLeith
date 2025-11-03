@@ -17,8 +17,8 @@ public class RealTimeRemoteCourse extends OnlineCourse{
 
 	@Override
 	public String toString() {
-		return "RealTimeRemoteCourse [zoomInfo=" + zoomInfo + ", courseNumber=" + courseNumber + ", numStudents="
-				+ numStudents + ", maxStudents=" + maxStudents + ", credits=" + credits + "]";
+		return "Course: " + courseNumber + "\nNumber of Students: " + numStudents + "\nMax Number of Students: " + maxStudents
+				+ "\nCredits: " + credits + "\nZoom Info: " + zoomInfo;
 	}
 
 	

@@ -1,25 +1,18 @@
 
 public class FullRemoteCourse extends OnlineCourse{
 
-	String zoomInfo = "none";
+	String email = "none";
 
-	public FullRemoteCourse(String courseNumber, int numStudents, int maxStudents, int credits, String zoomInfo) {
+	public FullRemoteCourse(String courseNumber, int numStudents, int maxStudents, int credits, String email) {
 		super(courseNumber, numStudents, maxStudents, credits);
-		this.zoomInfo = zoomInfo;
+		this.email = email;
 	}
-
-	public String getZoomInfo() {
-		return zoomInfo;
-	}
-
-	public void setZoomInfo(String zoomInfo) {
-		this.zoomInfo = zoomInfo;
-	}
+	
 
 	@Override
 	public String toString() {
 		return "Course: " + courseNumber + "\nNumber of Students: " + numStudents + "\nMax Number of Students: " + maxStudents
-				+ "\nCredits: " + credits + "Zoom Info: " + zoomInfo;
+				+ "\nCredits: " + credits + "\nEmail: " + email;
 	}
 
 	
