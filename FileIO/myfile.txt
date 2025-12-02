@@ -1,0 +1,3 @@
+Hello, this is my first line of writing in this file.
+this is appended text
+This was added outside the running app
