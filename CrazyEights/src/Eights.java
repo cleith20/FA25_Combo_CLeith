@@ -85,11 +85,11 @@ public class Eights {
 
 		one.displayScore();
 		two.displayScore();
-		if(one.score() > two.score()) {
-			System.out.println("\nPLAYER 1 WINS");}
-			else {
-				System.out.println("\nPLAYER 2 WINS");
-			}
+		if (one.score() > two.score()) {
+			System.out.println("\nPLAYER 1 WINS");
+		} else {
+			System.out.println("\nPLAYER 2 WINS");
+		}
 	}
 
 }
